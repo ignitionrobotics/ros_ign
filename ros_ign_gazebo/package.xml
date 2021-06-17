@@ -27,6 +27,9 @@
   <!-- Citadel -->
   <depend condition="$IGNITION_VERSION == citadel">ignition-gazebo3</depend>
 
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>python3-catkin-pkg-modules</exec_depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
