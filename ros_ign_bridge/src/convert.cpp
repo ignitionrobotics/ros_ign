@@ -55,7 +55,9 @@ std::string replace_delimiter(const std::string &input,
 
 std::string frame_id_ign_to_ros(const std::string &frame_id)
 {
-  return replace_delimiter(frame_id, "::", "/");
+  //return replace_delimiter(frame_id, "::", "/");
+  //ROS sensor header frame_id should be unique and without prefix
+  return frame_id.substr(frame_id.find_last_of("::") + 1);
 }
 
 template<>
